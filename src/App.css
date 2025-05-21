@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0a0e21;
+  color: #ffffff;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.profile-container {
+  width: 100%;
+  max-width: 500px;
+  background: linear-gradient(135deg, #1a1f38, #131631);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .profile-container {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 5px;
+  }
+
+  .profile-container {
+    border-radius: 8px;
+  }
+}
